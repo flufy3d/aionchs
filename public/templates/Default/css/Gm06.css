@@ -1,0 +1,143 @@
+body,td,th {
+	font-family: ËÎÌו;
+	font-size: 10pt;
+	color: #333;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url(bg.gif);
+	background-repeat: repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #111;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #111;
+}
+a:hover {
+    position: relative; border-bottom-width:1px; border-bottom-style:dotted;
+	text-decoration: none;
+	color: #CC0000;
+}
+a:active {
+	text-decoration: none;
+	color: #111;
+}
+.Top_Menu a {
+	font-family: ËÎÌו,Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #111;
+}
+.Top_Menu a:visited {
+	text-decoration: none;
+	color: #111;
+}
+.Top_Menu a:active {
+	text-decoration: none;
+	color: #111;
+}
+.Top_Menu a:hover {
+    position: relative; border-bottom-width:1px; border-bottom-style:dotted; 
+	text-decoration: none;
+	color: #FFF;
+}
+.M_Menu a {
+	font-family: ËÎÌו,Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #660000;
+}
+.M_Menu a:visited {
+	text-decoration: none;
+	color: #660000;
+}
+.M_Menu a:active {
+	text-decoration: none;
+	color: #660000;
+}
+.M_Menu a:hover {
+    position: relative; border-bottom-width:1px; border-bottom-style:dotted; 
+	text-decoration: none;
+	color: #FFF;
+}
+.Top_Body_L { background-color:#FFFDC9; background-image:url(New_Gm06_Body_03.gif);
+              background-repeat: no-repeat;
+	          background-position : top;}
+.Top_Body_Left {
+	background-image: url(New_Gm06_Body_05.gif);
+	background-repeat: no-repeat;
+	border-right: 1px solid #F64A05;
+	font-weight:bold;
+	background-position : left;
+}
+.M_Service_bg1 {
+	background-image: url(New_Gm06_Body_08.gif);
+	background-repeat: no-repeat;
+	background-position : right;
+}
+.M_Service_bg2 {
+	background-image: url(New_Gm06_Body_06.gif);
+	background-repeat: repeat-x;
+}
+.Top_Body_Line{border-right: 1px solid #F64A05;font-weight:bold;}
+.M_Top_line{border: 1px solid #fff799;}
+.M_Top_l_line{ border-right:1px solid #fff799; }
+.Fontblod {font-weight:bold;}
+.M_Top_Font { padding-top:5px; padding-left:5px; padding-right:5px;; line-height:13pt; font-size:12px}
+.M_Top_ad_b{ border-bottom:1px solid #fff799; }
+.Top_Body_Servide {background-image:url(New_Gm06_Body_09.gif);
+              background-repeat: no-repeat;
+	          background-position : center;
+			  border-bottom:1px solid #fff799;}
+.M_News_Border { border-left:1px solid #fff799; border-right:1px solid #fff799; }
+.M_liucheng {font-weight:bold; color:#FF6633}
+.M_Link_Border { border: 1px solid #fec56c; }
+.M_link_Left {border-left:1px solid #fec56c; }
+.M_Link_tit {background-image:url(New_Gm06_Index_010.gif); color:#990000;}
+.M_link1 { color:#000;background-color:#EEF5F9;border-bottom:1px solid #fec56c; border-right:1px solid #fec56c;}
+.M_link2 { color:#000;background-color:#FFFFFF;border-bottom:1px solid #fec56c; border-right:1px solid #fec56c;}
+.Page_Body_line{border: 1px solid #fff799; background-color:#FFFFFF;}
+.News_Tit_Left { border-bottom:1px dotted #cccccc;}
+.Page_Table_border {border: 1px solid #c6d8e3;}
+.Page_Table_border1 {border: 1px solid #ffcc66;}
+.Page_adb_Line { border-bottom:1px solid #FFE1A4; height:26px; font-weight:bold;}
+.Page_adb_Line1 { border-bottom:1px solid #FFE1A4; height:26px;}
+.Page_adb_Line2 { border-bottom:1px solid #FFE1A4 ;border-right:1px solid #FFE1A4; height:26px;}
+.Page_adb_Line3 { border-right:1px solid #FFE1A4; height:26px;}
+.Ads_Tit {  color:#993300;}
+input.btn
+{
+ border: 1px solid #fff; background-color: #FFF; color:#330000;
+}
+input.btns
+{
+ border: 1px solid #dddddd; background-color: #f6f6f6; padding-top:3px
+}
+input.btns1
+{
+ border: 1px solid #cccccc; background-color: #F6F6F6; padding-top:3px
+}
+input.bank
+{
+ border: 1px solid #ccc; background-color: #F6f6f6; padding-top:3px
+}
+textarea { border: 1px solid #dddddd; border-color: #c0c0c0; background-color: #FFFFFF;}
+.Shop_M_Border {background-color:#000;border-left:1px solid #FFF0D2; border-top:1px solid #FFF0D2;}
+.Shop_M_Border1 {background-color:#fff;border-right:1px solid #FFF0D2; border-bottom:1px solid #FFF0D2;}
+.showlist1 {background:#FFFFFF;}
+.showlist2 {background:#F8F8F8;}
+.Taocan_Tit { font-weight:bold; color:#660000;}
+.Taocan_red { color:#990000;}
+.Taocan_01 { color: #b21415; }
+.nprice {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #ff0000; FONT-FAMILY: Georgia
+}

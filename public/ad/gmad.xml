@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312" standalone="no"?>
+<AionChs>
+	<!--增加一条广告就在AionChs节点加一个子节点
+
+子节点属性对应说明
+piclink:图片链接
+
+link:链接地址
+
+time:显示时间
+
+
+中间的值是说明
+
+广告顺序为ad1~adxxx，加代码里一定注意按顺序写-->
+	<ad1 piclink="http://www.aionchs.com/ad/aion002.gif" link="http://www.aion001.com/" time="20">永恒私服发布</ad1>
+	<ad2 piclink="http://www.aionchs.com/ad/aion003.gif" link="http://www.aionjd.com/" time="40">永恒之塔基地</ad2>
+	<ad3 piclink="http://www.aionchs.com/ad/aion004.gif" link="http://www.ff45.com/" time="40">永恒之塔私服</ad3>
+</AionChs>

@@ -1,0 +1,194 @@
+<!--<?php
+$s_url=$B_url.'/wysiwyg.php?type=sale';
+$d_url=$B_url.'/wysiwyg.php?type=download';
+//$s_url=PrintEot('sale');
+//$d_url=PrintEot('download');
+print <<<EOT
+-->
+<table cellPadding=0 cellSpacing=0 width="100%">
+<tr><td id='edit' width='59%'>
+ 
+<select onChange="showfont(this.options[this.selectedIndex].value);this.selectedIndex=0;this.selectedIndex=0" name=font>
+<option value="" selected>字体</option>
+<option value='宋体'>宋体</option>
+<option value='楷体_GB2312'>楷体_GB2312</option>
+<option value='新宋体'>新宋体</option>
+<option value='黑体'>黑体</option>
+<option value='隶书'>隶书</option>
+<option value='Andale Mono'>Andale Mono</option>
+<option value='Arial'>Arial</option>
+<option value='Arial Black'>Arial Black</option>
+<option value='Book Antiqua'>Book Antiqua</option>
+<option value='Century Gothic'>Century Gothic</option>
+<option value='Comic Sans MS'>Comic Sans MS</option>
+<option value='Courier New'>Courier New</option>
+<option value='Georgia'>Georgia</option>
+<option value='Impact'>Impact</option>
+<option value='Tahoma'>Tahoma</option>
+<option value='Times New Roman'>Times New Roman</option>
+<option value='Trebuchet MS'>Trebuchet MS</option>
+<option value='Script MT Bold'>Script MT Bold</option>
+<option value='Stencil'>Stencil</option>
+<option value='Verdana'>Verdana</option>
+<option value='Lucida Console'>Lucida Console</option></select>
+&nbsp;字号
+<select onChange="showsize(this.options[this.selectedIndex].value);this.selectedIndex=0" name=size>
+<option value="" selected>字号</option>
+<option value=1>1</option><option value=2>2</option><option value=3>3</option>
+<option value=4>4</option><option value=5>5</option><option value=6>6</option>
+</select>
+&nbsp;字体颜色 
+<select onChange="showcolor(this.options[this.selectedIndex].value);this.selectedIndex=0" name=color>
+<option value=''></option>
+<option value='skyblue' style='background-color:skyblue;color:skyblue'>&nbsp; &nbsp; &nbsp;  &nbsp;</option>
+<option value='royalblue' style='background-color:royalblue;color:royalblue'></option>
+<option value='blue' style='background-color:blue'></option>
+<option value='darkblue' style='background-color:darkblue'></option>
+<option value='orange' style='background-color:orange'></option>
+<option value='orangered' style='background-color:orangered'></option>
+<option value='crimson' style='background-color:crimson'></option>
+<option value='red' style='background-color:red'></option>
+<option value='firebrick' style='background-color:firebrick'></option>
+<option value='darkred' style='background-color:darkred'></option>
+<option value='green' style='background-color:green'></option>
+<option value='limegreen' style='background-color:limegreen'></option>
+<option value='seagreen' style='background-color:seagreen'></option>
+<option value='teal' style='background-color:teal'></option>
+<option value='deeppink' style='background-color:deeppink'></option>
+<option value='tomato' style='background-color:tomato'></option>
+<option value='coral' style='background-color:coral'></option>
+<option value='purple' style='background-color:purple'></option>
+<option value='indigo' style='background-color:indigo'></option>
+<option value='burlywood' style='background-color:burlywood'></option>
+<option value='sandybrown' style='background-color:sandybrown'></option>
+<option value='sienna' style='background-color:sienna'></option>
+<option value='chocolate' style='background-color:chocolate'></option>
+<option value='silver' style='background-color:silver'></option></select>
+<select name="box" onFocus="this.selectedIndex=0" onChange="addbox(this.options[this.selectedIndex].value)" size="1">
+    <option value="" selected>文字底色</option>
+    <option value='#FF0000' style='color:#FF0000;BACKGROUND-COLOR:#FF0000'>紅色</option>
+    <option value='#00FF00' style='color:#00FF00;BACKGROUND-COLOR:#00FF00'>綠色</option>
+    <option value='#0000FF' style='color:#0000FF;BACKGROUND-COLOR:#0000FF'>藍色</option>
+    <option value='#FF00FF' style='color:#FF00FF;BACKGROUND-COLOR:#FF00FF'>牡丹紅</option>
+    <option value='#00FFFF' style='color:#00FFFF;BACKGROUND-COLOR:#00FFFF'>青色</option>
+    <option value='#FFFF00' style='color:#FFFF00;BACKGROUND-COLOR:#FFFF00'>黃色</option>
+    <option value='#70DB93' style='color:#70DB93;BACKGROUND-COLOR:#70DB93'>海藍</option>
+    <option value='#FFFFFF' style='color:#FFFFFF;BACKGROUND-COLOR:#FFFFFF'>白色</option>
+    <option value='#5C3317' style='color:#5C3317;BACKGROUND-COLOR:#5C3317'>巧克力色</option>
+    <option value='#9F5F9F' style='color:#9F5F9F;BACKGROUND-COLOR:#9F5F9F'>藍紫色</option>
+    <option value='#B5A642' style='color:#B5A642;BACKGROUND-COLOR:#B5A642'>黃銅色</option>
+    <option value='#D9D919' style='color:#D9D919;BACKGROUND-COLOR:#D9D919'>亮金色</option>
+    <option value='#A67D3D' style='color:#A67D3D;BACKGROUND-COLOR:#A67D3D'>棕色</option>
+    <option value='#8C7853' style='color:#8C7853;BACKGROUND-COLOR:#8C7853'>青銅色</option>
+    <option value='#A67D3D' style='color:#A67D3D;BACKGROUND-COLOR:#A67D3D'>青銅色二</option>
+    <option value='#5F9F9F' style='color:#5F9F9F;BACKGROUND-COLOR:#5F9F9F'>士官服藍色</option>
+    <option value='#D98719' style='color:#D98719;BACKGROUND-COLOR:#D98719'>冷銅色</option>
+    <option value='#B87333' style='color:#B87333;BACKGROUND-COLOR:#B87333'>銅色</option>
+    <option value='#FF7F00' style='color:#FF7F00;BACKGROUND-COLOR:#FF7F00'>珊瑚紅</option>
+    <option value='#42426F' style='color:#42426F;BACKGROUND-COLOR:#42426F'>紫藍色</option>
+    <option value='#5C4033' style='color:#5C4033;BACKGROUND-COLOR:#5C4033'>深棕</option>
+    <option value='#2F4F2F' style='color:#2F4F2F;BACKGROUND-COLOR:#2F4F2F'>深綠</option>
+    <option value='#4A766E' style='color:#4A766E;BACKGROUND-COLOR:#4A766E'>深銅綠色</option>
+    <option value='#4F4F2F' style='color:#4F4F2F;BACKGROUND-COLOR:#4F4F2F'>深橄欖綠</option>
+    <option value='#9932CD' style='color:#9932CD;BACKGROUND-COLOR:#9932CD'>深蘭花色</option>
+    <option value='#871F78' style='color:#871F78;BACKGROUND-COLOR:#871F78'>深紫色</option>
+    <option value='#6B238E' style='color:#6B238E;BACKGROUND-COLOR:#6B238E'>深石板藍</option>
+    <option value='#2F4F4F' style='color:#2F4F4F;BACKGROUND-COLOR:#2F4F4F'>深鉛灰色</option>
+    <option value='#97694F' style='color:#97694F;BACKGROUND-COLOR:#97694F'>深棕褐色</option>
+    <option value='#7093DB' style='color:#7093DB;BACKGROUND-COLOR:#7093DB'>深綠松石色</option>
+    <option value='#855E42' style='color:#855E42;BACKGROUND-COLOR:#855E42'>暗木色</option>
+    <option value='#545454' style='color:#545454;BACKGROUND-COLOR:#545454'>淡灰色</option>
+    <option value='#856363' style='color:#856363;BACKGROUND-COLOR:#856363'>土灰玫瑰紅色</option>
+    <option value='#D19275' style='color:#D19275;BACKGROUND-COLOR:#D19275'>長石色</option>
+    <option value='#8E2323' style='color:#8E2323;BACKGROUND-COLOR:#8E2323'>火磚色</option>
+    <option value='#238E23' style='color:#238E23;BACKGROUND-COLOR:#238E23'>森林綠</option>
+    <option value='#CD7F32' style='color:#CD7F32;BACKGROUND-COLOR:#CD7F32'>金色</option>
+    <option value='#DBDB70' style='color:#DBDB70;BACKGROUND-COLOR:#DBDB70'>鮮黃色</option>
+    <option value='#C0C0C0' style='color:#C0C0C0;BACKGROUND-COLOR:#C0C0C0'>灰色</option>
+    <option value='#527F76' style='color:#527F76;BACKGROUND-COLOR:#527F76'>銅綠色</option>
+    <option value='#93DB70' style='color:#93DB70;BACKGROUND-COLOR:#93DB70'>青黃色</option>
+    <option value='#215E21' style='color:#215E21;BACKGROUND-COLOR:#215E21'>獵人綠</option>
+    <option value='#4E2F2F' style='color:#4E2F2F;BACKGROUND-COLOR:#4E2F2F'>印度紅</option>
+    <option value='#9F9F5F' style='color:#9F9F5F;BACKGROUND-COLOR:#9F9F5F'>土黃色</option>
+    <option value='#C0D9D9' style='color:#C0D9D9;BACKGROUND-COLOR:#C0D9D9'>淺藍色</option>
+    <option value='#A8A8A8' style='color:#A8A8A8;BACKGROUND-COLOR:#A8A8A8'>淺灰色</option>
+    <option value='#8F8FBD' style='color:#8F8FBD;BACKGROUND-COLOR:#8F8FBD'>淺鋼藍色</option>
+    <option value='#E9C2A6' style='color:#E9C2A6;BACKGROUND-COLOR:#E9C2A6'>淺木色</option>
+    <option value='#32CD32' style='color:#32CD32;BACKGROUND-COLOR:#32CD32'>石灰綠色</option>
+    <option value='#E47833' style='color:#E47833;BACKGROUND-COLOR:#E47833'>桔黃色</option>
+    <option value='#8E236B' style='color:#8E236B;BACKGROUND-COLOR:#8E236B'>褐紅色</option>
+    <option value='#32CD99' style='color:#32CD99;BACKGROUND-COLOR:#32CD99'>中海藍色</option>
+    <option value='#3232CD' style='color:#3232CD;BACKGROUND-COLOR:#3232CD'>中藍色</option>
+    <option value='#6B8E23' style='color:#6B8E23;BACKGROUND-COLOR:#6B8E23'>中森林綠</option>
+    <option value='#EAEAAE' style='color:#EAEAAE;BACKGROUND-COLOR:#EAEAAE'>中鮮黃色</option>
+    <option value='#9370DB' style='color:#9370DB;BACKGROUND-COLOR:#9370DB'>中蘭花色</option>
+    <option value='#426F42' style='color:#426F42;BACKGROUND-COLOR:#426F42'>中海綠色</option>
+    <option value='#7F00FF' style='color:#7F00FF;BACKGROUND-COLOR:#7F00FF'>中石板藍色</option>
+    <option value='#7FFF00' style='color:#7FFF00;BACKGROUND-COLOR:#7FFF00'>中春綠色</option>
+    <option value='#70DBDB' style='color:#70DBDB;BACKGROUND-COLOR:#70DBDB'>中綠松石色</option>
+    <option value='#DB7093' style='color:#DB7093;BACKGROUND-COLOR:#DB7093'>中紫紅色</option>
+    <option value='#A68064' style='color:#A68064;BACKGROUND-COLOR:#A68064'>中木色</option>
+    <option value='#2F2F4F' style='color:#2F2F4F;BACKGROUND-COLOR:#2F2F4F'>深藏青色</option>
+    <option value='#23238E' style='color:#23238E;BACKGROUND-COLOR:#23238E'>海軍藍</option>
+    <option value='#4D4DFF' style='color:#4D4DFF;BACKGROUND-COLOR:#4D4DFF'>霓虹籃</option>
+    <option value='#FF6EC7' style='color:#FF6EC7;BACKGROUND-COLOR:#FF6EC7'>霓虹粉紅</option>
+    <option value='#00009C' style='color:#00009C;BACKGROUND-COLOR:#00009C'>新深藏青色</option>
+    <option value='#EBC79E' style='color:#EBC79E;BACKGROUND-COLOR:#EBC79E'>新棕褐色</option>
+    <option value='#CFB53B' style='color:#CFB53B;BACKGROUND-COLOR:#CFB53B'>暗金黃色</option>
+    <option value='#FF7F00' style='color:#FF7F00;BACKGROUND-COLOR:#FF7F00'>橙色</option>
+    <option value='#FF2400' style='color:#FF2400;BACKGROUND-COLOR:#FF2400'>橙紅色</option>
+    <option value='#DB70DB' style='color:#DB70DB;BACKGROUND-COLOR:#DB70DB'>淡紫色</option>
+    <option value='#8FBC8F' style='color:#8FBC8F;BACKGROUND-COLOR:#8FBC8F'>淺綠色</option>
+    <option value='#BC8F8F' style='color:#BC8F8F;BACKGROUND-COLOR:#BC8F8F'>粉紅色</option>
+    <option value='#EAADEA' style='color:#EAADEA;BACKGROUND-COLOR:#EAADEA'>李子色</option>
+    <option value='#D9D9F3' style='color:#D9D9F3;BACKGROUND-COLOR:#D9D9F3'>石英色</option>
+    <option value='#5959AB' style='color:#5959AB;BACKGROUND-COLOR:#5959AB'>艷藍色</option>
+    <option value='#6F4242' style='color:#6F4242;BACKGROUND-COLOR:#6F4242'>鮭魚色</option>
+    <option value='#BC1717' style='color:#BC1717;BACKGROUND-COLOR:#BC1717'>猩紅色</option>
+    <option value='#238E68' style='color:#238E68;BACKGROUND-COLOR:#238E68'>海綠色</option>
+    <option value='#6B4226' style='color:#6B4226;BACKGROUND-COLOR:#6B4226'>半甜巧克力色</option>
+    <option value='#8E6B23' style='color:#8E6B23;BACKGROUND-COLOR:#8E6B23'>赭色</option>
+    <option value='#E6E8FA' style='color:#E6E8FA;BACKGROUND-COLOR:#E6E8FA'>銀色</option>
+    <option value='#3299CC' style='color:#3299CC;BACKGROUND-COLOR:#3299CC'>天藍</option>
+    <option value='#007FFF' style='color:#007FFF;BACKGROUND-COLOR:#007FFF'>石板藍</option>
+    <option value='#FF1CAE' style='color:#FF1CAE;BACKGROUND-COLOR:#FF1CAE'>艷粉紅色</option>
+    <option value='#00FF7F' style='color:#00FF7F;BACKGROUND-COLOR:#00FF7F'>春綠色</option>
+    <option value='#236B8E' style='color:#236B8E;BACKGROUND-COLOR:#236B8E'>鋼藍色</option>
+    <option value='#38B0DE' style='color:#38B0DE;BACKGROUND-COLOR:#38B0DE'>亮天藍色</option>
+    </select>
+<br><br>
+<img onClick=bold() alt='粗体' src='$imgpath/post/editor/bold.gif' >
+<img onClick=italicize() alt='斜体' src='$imgpath/post/editor/italic.gif' >
+<img onClick=underline() alt='下划线' src='$imgpath/post/editor/underline.gif' >
+<img onClick=center() alt='居中' src='$imgpath/post/editor/center.gif' >
+<img onClick=rming() alt='插入rm电影文件' src='$imgpath/post/editor/rm.gif' >
+<img onClick=wmv() alt='插入wmv在线播放' src='$imgpath/post/editor/mpeg.gif' >
+<img onClick=mp3() alt='插入MP3、WMA在线播放' src='$imgpath/post/editor/mp3.gif' >
+<img onClick=mp3_3hz() alt='插入同步歌词音乐播放器' src='$imgpath/post/editor/3hz.gif' >
+<img onClick=image() alt='插入图片' src='$imgpath/post/editor/image.gif' >
+<img onClick=setswf() alt='插入 Flash 动画' src='$imgpath/post/editor/swf.gif' >
+<img onClick=showurl() alt='插入url链接' src='$imgpath/post/editor/url.gif' >
+<img onClick=showcode() alt='插入代码' src='$imgpath/post/editor/code.gif' >
+<img onClick=quoteme() alt='插入引用' src='$imgpath/post/editor/quote.gif' >
+<img onClick=list() alt='插入列表' src='$imgpath/post/editor/list_2.gif' >
+<br>
+<img onClick=setfly() alt='飞行字' src='$imgpath/post/editor/fly.gif' >
+<img onClick=movesign() alt='移动字' src='$imgpath/post/editor/move.gif' >
+<img onClick=glow() alt='发光字' src='$imgpath/post/editor/glow.gif' >
+<img onClick=typewriter() alt='打印机字' src='$imgpath/post/editor/typewriter.gif' >
+<img onClick=crfont() alt='彩虹字' src='$imgpath/post/editor/crfont.gif' >
+<img onClick=dao() alt='倒字' src='$imgpath/post/editor/dao.gif' >
+<img onClick=strike() alt='文字加上删划线' src='$imgpath/post/editor/strike.gif' >
+<img onClick=qq() alt='插入QQ号码' src='$imgpath/post/editor/qq.gif' >
+<img onClick=email() alt='插入E-mail地址' src='$imgpath/post/editor/email.gif' >
+<img onClick=post() alt='隐藏贴子' src='$imgpath/post/editor/post.gif' >
+<img onClick=hide() alt='加密贴子' src='$imgpath/post/editor/hide.gif' >
+<img onClick=sell() alt='出售贴子' src='$imgpath/post/editor/sell.gif' >
+<img onClick=iframe() alt='iframe调用网页' src='$imgpath/post/editor/iframe.gif' >
+<img onClick=emule() alt='插入emule链接' src='$imgpath/post/editor/emule.gif' >
+<img onClick="saletable('$s_url')" alt='发表交易帖' src='$imgpath/post/editor/sale.gif' >
+</td></tr></table><br>
+<textarea name="atc_content" id="atc_content" cols="90" rows="25" style="overflow:auto;"  onkeydown="quickpost(event)" onfocus="getActiveText(this)" onclick="getActiveText(this)"  onchange="getActiveText(this)" tabindex="2">{$atc_content}</textarea>
+<!--
+EOT;
+?>
